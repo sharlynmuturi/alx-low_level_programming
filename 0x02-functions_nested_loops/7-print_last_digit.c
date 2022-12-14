@@ -1,7 +1,8 @@
 #include "main.h"
 /**
  * print_last_digit - Prints the last digit of a number
- * divide number by 10 
+ * divide number by 10
+ * @digits: input number to find last digit
  * the remainder is the last digit of the number
  * Return: Last digit value
  */

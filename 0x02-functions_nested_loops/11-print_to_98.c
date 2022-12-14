@@ -1,7 +1,7 @@
 #include "main.h"
-/*
- * print_to_98(int n) - Prints all natural numbers from n 10 98
- * user inputs number n
+/**
+ * print_to_98 - Prints all natural numbers from n 10 98
+ * @n: user inputs number n
  * Return: 0
  */
 void print_to_98(int n)
