@@ -1,7 +1,9 @@
+#include <stdio.h>
 #include "main.h"
+
 /**
- * print_to_98 - Prints all natural numbers from n 10 98
- * @n: user inputs number n
+ * print_to_98 - Prints all natural numbers from n to 98
+ * @n: input number n
  * Return: 0
  */
 void print_to_98(int n)
@@ -35,9 +37,4 @@ void print_to_98(int n)
 		printf("98");
 	}
 	printf("\n");
-}
-
-
-
-
 }
