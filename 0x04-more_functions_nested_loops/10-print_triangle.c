@@ -5,20 +5,17 @@
  * Return: 0
  */
 
-void print_triangle(int size);
+void print_triangle(int size)
 {
+	int x, y;
+
 	if (size > 0)
 	{
-		int y = 0
-
-		while (y < size)
+		for (x = 1; x <= size; x++)
 		{
-			space = size - y - 1;
-			int x = 0
-
-			while (x < size)
+			for (y = 1; y <= size; y++)
 			{
-				if (space > x)
+				if (y <= size - x)
 				{
 					_putchar(' ');
 				}
@@ -26,12 +23,12 @@ void print_triangle(int size);
 				{
 					_putchar('#');
 				}
-				x++;
 			}
-			y++;
 			_putchar('\n');
 		}
 	}
 	else
+	{
 		_putchar('\n');
+	}
 }
