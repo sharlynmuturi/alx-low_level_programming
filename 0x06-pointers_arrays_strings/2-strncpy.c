@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strncpy - Entry point
+ * _strncpy - copy string starting from index 0 of dest
  * @dest: string input
  * @src: string input
  * @n: input no of characters to copy over
