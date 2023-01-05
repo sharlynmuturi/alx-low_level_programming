@@ -1,6 +1,7 @@
 #include "main.h"
 
 int findStringLength(char *s);
+int checkPalindrome(char str[], int st, int end);
 /**
  * is_palindrome - checks if string is palindrome
  * @s: string input
@@ -15,7 +16,7 @@ int is_palindrome(char *s)
 
 	if (length == 0)
 		return (1);
-	return (palindrome(s, 0, length -1);
+	return ((checkPalindrome(s, 0, length - 1)));
 }
 
 /**
@@ -31,10 +32,19 @@ int findStringLength(char *s)
 }
 
 /**
- * palindrome - checks if start and end of string match
- * @string: string input
+ * checkPalindrome - checks if start and end of string match
+ * @str: string input
  * @st: start of string
- * Return: 
-
+ * @end: end of string input from is_palindrome, from findStringLength
+ * Return: if palidrome
  */
-
+int checkPalindrome(char str[], int st, int end)
+{
+	if (st >= end)
+		return (1);
+	if (str[st] != str[end])
+		return (0);
+	if (st <= end || st < end + 1)
+		return (checkPalindrome(str, st + 1, end - 1));
+	return (1);
+}
