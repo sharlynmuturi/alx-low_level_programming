@@ -7,7 +7,7 @@
 
 size_t list_len(const list_t *h)
 {
-	const lists_t *temp;
+	const list_t *temp;
 	unsigned int count;
 
 	temp = malloc(sizeof(list_t));
@@ -17,7 +17,7 @@ size_t list_len(const list_t *h)
 	count  = 0;
 	while (temp != NULL)
 	{
-		temp = temp->next;
+		temp  = temp->next;
 		count++;
 	}
 	return (count);
