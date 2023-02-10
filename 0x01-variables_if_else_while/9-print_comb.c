@@ -12,14 +12,12 @@ int main(void)
 
 	for (combos = 0; combos <= 9; combos++)
 	{
-		putchar((combos % 10) + '0');
-		if (combos == 9)
+		putchar(combos + '0');
+		if (combos < 9)
 		{
-			continue;
-		}
-
 		putchar(',');
 		putchar(' ');
+		}
 	}
 	putchar('\n');
 
