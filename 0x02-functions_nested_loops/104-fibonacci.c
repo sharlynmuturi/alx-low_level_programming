@@ -8,7 +8,7 @@ int main(void)
 	int num;
 	unsigned long sum, fib1 = 0, fib2 = 1;
 
-	for (num = 0; num < 97; num++)
+	for (num = 0; num < 98; num++)
 	{
 		sum = fib1 + fib2;
 		printf("%lu", sum);
@@ -16,7 +16,7 @@ int main(void)
 		fib1 = fib2;
 		fib2 = sum;
 
-		if (num == 96)
+		if (num == 97)
 			printf("\n");
 		else
 			printf(", ");
