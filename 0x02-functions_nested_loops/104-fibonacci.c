@@ -11,12 +11,15 @@ int main(void)
 	for (num = 0; num < 98; num++)
 	{
 		sum = fib1 + fib2;
+		printf("%lu", sum);
+
 		fib1 = fib2;
 		fib2 = sum;
 
-		printf("%lu", sum);
-		printf(", ");
+		if (num == 97)
+			printf("\n");
+		else
+			printf(", ");
 	}
-	printf("\n");
 	return (0);
 }
